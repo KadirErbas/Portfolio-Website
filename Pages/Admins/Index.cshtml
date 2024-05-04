@@ -1,0 +1,13 @@
+@page "/admin/"
+@model IndexModel
+@{
+    ViewData["Title"] = "Admin";
+}
+
+<h1>Admin sayfası</h1>
+
+
+
+@foreach(var admin in Model.AdminList){
+    <p>@admin.Email</p>
+}
