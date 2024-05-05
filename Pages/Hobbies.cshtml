@@ -1,11 +1,13 @@
 @page
-@model portfolioProject.Pages.Hobbies
+@model HobbiesModel
 @{
     ViewData["Title"] = "Hobbies";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<div>
-    
-</div>
+@foreach(var hobbies in Model.HobbiesList){
+    <p>@hobbies.Id</p>
+    <p>@hobbies.Hobby</p>
+
+}

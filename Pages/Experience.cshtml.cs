@@ -1,24 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
+using portfolioProject.Models;
+using portfolioProject.Repository;
 
-namespace portfolioProject.Pages
+namespace portfolioProject.Pages;
+
+public class ExperienceModel : PageModel
 {
-    public class Experience : PageModel
+    public IEnumerable<Experience> ExperienceList = new List<Experience>();
+    private readonly IExperienceRepository _experienceRepository;
+    public ExperienceModel(IExperienceRepository experienceRepository){
+        _experienceRepository = experienceRepository;
+    }
+
+    public void OnGet()
     {
-        private readonly ILogger<Experience> _logger;
-
-        public Experience(ILogger<Experience> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-        }
+        ExperienceList = _experienceRepository.GetAll();
     }
 }

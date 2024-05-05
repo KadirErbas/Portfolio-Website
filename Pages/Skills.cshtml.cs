@@ -1,24 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
+using portfolioProject.Models;
+using portfolioProject.Repository;
 
-namespace portfolioProject.Pages
+namespace portfolioProject.Pages;
+
+public class SkillsModel : PageModel
 {
-    public class Skills : PageModel
+    public IEnumerable<Skills> SkillsList = new List<Skills>();
+    private readonly ISkillsRepository _skillsRepository;
+    public SkillsModel(ISkillsRepository SkillsRepository){
+        _skillsRepository = SkillsRepository;
+    }
+
+    public void OnGet()
     {
-        private readonly ILogger<Skills> _logger;
-
-        public Skills(ILogger<Skills> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-        }
+        SkillsList = _skillsRepository.GetAll();
     }
 }

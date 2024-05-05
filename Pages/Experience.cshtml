@@ -1,11 +1,16 @@
 @page
-@model portfolioProject.Pages.Experience
+@model ExperienceModel
 @{
     ViewData["Title"] = "Experience";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<div>
-    
-</div>
+@foreach(var experience in Model.ExperienceList){
+    <p>@experience.Id</p>
+    <p>@experience.Title</p>
+    <p>@experience.Subtitle</p>
+    <p>@experience.Description</p>
+    <p>@experience.Date</p>
+
+}

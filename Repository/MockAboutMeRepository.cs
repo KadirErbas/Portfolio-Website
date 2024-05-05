@@ -16,7 +16,7 @@ public class MockAboutMeRepository : IAboutMeRepository
             Email="akadir.erbass@gmail.com",
             Phone="05523527172",
             Note="2000 Yılında Batmanda d doğdum",
-            Photo="1.jpg",
+            Photo="1.jpg"
             }
         };
     }

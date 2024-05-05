@@ -17,7 +17,6 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-
         AdminList= _adminRepository.GetAll();
     }
 }

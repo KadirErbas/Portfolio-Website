@@ -6,6 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 builder.Services.AddSingleton<IAdminRepository, MockAdminRepository>();
+builder.Services.AddScoped<IAboutMeRepository, MockAboutMeRepository>();
+builder.Services.AddScoped<IEducationRepository, MockEducationRepository>();
+builder.Services.AddScoped<IExperienceRepository, MockExperienceRepository>();
+builder.Services.AddScoped<IHobbiesRepository, MockHobbiesRepository>();
+builder.Services.AddScoped<IReferenceRepository, MockReferenceRepository>();
+builder.Services.AddScoped<ISkillsRepository, MockSkillsRepository>(); 
+
 
 var app = builder.Build();
 

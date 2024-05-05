@@ -1,24 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
+using portfolioProject.Models;
+using portfolioProject.Repository;
 
-namespace portfolioProject.Pages
+namespace portfolioProject.Pages;
+
+public class ReferenceModel : PageModel
 {
-    public class Reference : PageModel
+    public IEnumerable<Reference> ReferenceList = new List<Reference>();
+    private readonly IReferenceRepository _referenceRepository;
+    public ReferenceModel(IReferenceRepository referenceRepository){
+        _referenceRepository = referenceRepository;
+    }
+
+    public void OnGet()
     {
-        private readonly ILogger<Reference> _logger;
-
-        public Reference(ILogger<Reference> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-        }
+        ReferenceList = _referenceRepository.GetAll();
     }
 }

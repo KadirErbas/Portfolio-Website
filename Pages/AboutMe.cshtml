@@ -1,11 +1,20 @@
-@page
-@model portfolioProject.Pages.AboutMe
+﻿@page 
+@model AboutMeModel
 @{
-    ViewData["Title"] = "AboutMe";
+    ViewData["Title"] = "About Me";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<div>
-    
-</div>
+
+    @foreach(var aboutme in Model.AboutMeList){
+        <p>@aboutme.Id</p>
+        <p>@aboutme.Name</p>
+        <p>@aboutme.Surname</p>
+        <p>@aboutme.Addresses</p>
+        <p>@aboutme.Email</p>
+        <p>@aboutme.Phone</p>
+        <p>@aboutme.Note</p>
+        <p>@aboutme.Photo</p>
+    }
+

@@ -1,10 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace portfolioProject.Models;
 
-namespace portfolioProject.Models
-{
     public class AboutMe
     {
     public int Id { get; set;}
@@ -17,4 +12,3 @@ namespace portfolioProject.Models
     public string Photo { get; set;} = string.Empty;
             
     }
-}

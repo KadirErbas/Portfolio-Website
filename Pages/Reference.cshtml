@@ -1,11 +1,16 @@
 @page
-@model portfolioProject.Pages.Reference
+@model ReferenceModel
 @{
     ViewData["Title"] = "Reference";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<div>
-    
-</div>
+@foreach(var reference in Model.ReferenceList){
+    <p>@reference.Id</p>
+    <p>@reference.Name</p>
+    <p>@reference.Surname</p>
+    <p>@reference.Email</p>
+    <p>@reference.Institution</p>
+    <p>@reference.Title</p>
+}
