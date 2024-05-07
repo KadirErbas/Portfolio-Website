@@ -1,10 +1,178 @@
 ﻿@page
 @model IndexModel
+
 @{
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+        <!-- Page Content-->
+        <div class="container-fluid p-0" >
+            <!-- About-->
+            @if (Model.AboutMeList.Any())
+            {
+                <section class="resume-section" id="about">
+                    <div class="resume-section-content">
+                        <h1 class="mb-0">
+                            @Model.AboutMeList.First().Name
+                            <span class="text-primary">@Model.AboutMeList.First().Surname</span>
+                        </h1>
+                        <div class="subheading mb-5">
+                            @Model.AboutMeList.First().Addresses · @Model.AboutMeList.First().Phone ·
+                            <a href="mailto:name@email.com">@Model.AboutMeList.First().Email</a>
+                        </div>
+                        <p class="lead mb-5">@Model.AboutMeList.First().Note</p>
+                        <div class="social-icons">
+                            <a class="social-icon" href="https://www.linkedin.com/in/abdulkadir-erbas/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="social-icon" href="https://github.com/KadirErbas" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </section>
+            }
+            <!-- About-->
+
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                @foreach(var experience in Model.ExperienceList){
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">@experience.Title</h3>
+                            <div class="subheading mb-3">@experience.Subtitle</div>
+                            <p>@experience.Description</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">@experience.Date</span></div>
+                    </div>               
+                }
+            </div>
+
+
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Eğitim</h2>
+                    @foreach(var education in Model.EducationList){
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">@education.Title</h3>
+                                <div class="subheading mb-3">@education.Subtitle</div>
+                                <div>@education.Description</div>
+                                <p>GPA: @education.GNO</p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">@education.Date</span></div>
+                        </div>
+                    
+                    }
+
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Beceriler</h2>
+                    <div class="subheading mb-3">Programlama Dilleri & Araçlar</div>
+
+                    @foreach(var skill in Model.SkillsList){
+                        <h5>@skill.Skill</h5>
+                        
+
+                        switch(skill.Value.ToLower())
+                        {    
+                            case "başlangıç":
+                                <div class="progress mb-3" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:12.5%">12.5%</div>
+                                </div>                            
+                            break;
+                        case "temel":
+                            <div class="progress mb-3" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:25%">25%</div>
+                            </div> 
+                            
+                            break;
+                        case "orta":
+                            <div class="progress mb-3" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%">50%</div>
+                            </div> 
+                            break;
+                        case "iyi":
+                            <div class="progress mb-3" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:75%">75%</div>
+                            </div> 
+                            
+                            break;
+                        case "çok iyi":
+                            <div class="progress mb-3" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">100%</div>
+                            </div> 
+                            break;
+                        default:
+                            <div class="progress mb-3" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%">0%</div>
+                            </div>  
+                            break;
+
+                        }                      
+                    }
+
+                    <div class="subheading mb-3 mt-5">İşlevel Beceriler</div>
+                    <ul class="fa-ul mb-0">
+                        @foreach(var workflow in Model.WorkflowList){
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                @workflow.Description
+                            </li>
+                            
+
+                        }
+                        
+
+
+
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Hobiler</h2>
+
+                    @foreach(var hobbies in Model.HobbiesList){
+                        <p>•    @hobbies.Hobby</p>                   
+                    }
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Referans -->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Referanslar</h2>
+
+                    @foreach(var reference in Model.ReferenceList)
+                    {
+                        <div class="container mb-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>@reference.Name <span class="text-primary">@reference.Surname</span></h4>
+                                    <p class="mb-2"><strong>E-Posta:</strong> @reference.Email</p>
+                                    <p class="mb-2"><strong>Kurum:</strong> @reference.Institution</p>
+                                    <p class="mb-2"><strong>Ünvan:</strong> @reference.Title</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    }
+                    
+
+                </div>
+            </section>
+        </div>
+
+
+        

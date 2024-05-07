@@ -10,8 +10,15 @@ public class MockSkillsRepository : ISkillsRepository
         _skillsList = new List<Skills>(){
             new Skills {
             Id = 1,
-            Skill="Yaman",
+            Skill="HTML",
+            Value="çok iyi"
             },
+            new Skills {
+            Id = 2,
+            Skill="Javascript",
+            Value="başlangıç"
+            },
+
 
         };
     }

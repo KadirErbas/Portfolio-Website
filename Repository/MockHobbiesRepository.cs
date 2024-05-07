@@ -10,8 +10,13 @@ public class MockHobbiesRepository : IHobbiesRepository
         _hobbiesList = new List<Hobbies>(){
             new Hobbies {
             Id = 1,
-            Hobby = "müzikle uğraşırım bağlama çalmak beni ruhen dinlendirir. Yürüyüş yaparım.",
+            Hobby = "Yazılım Mühendisliği öğrencisi olmamın yanısıra. Gitar veya Bağlama enstrumanlarını çalıp vaktimi geçiririm.",
             },
+            new Hobbies {
+            Id = 2,
+            Hobby = "Belgesel izlemekten ve bilim kurgu roman tarzı kitaplar okumaktan keyf alırım.",
+            },
+            
 
         };
     }

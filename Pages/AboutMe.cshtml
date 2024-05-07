@@ -1,12 +1,32 @@
 ﻿@page 
 @model AboutMeModel
-@{
-    ViewData["Title"] = "About Me";
+
+
+
+
+@if (Model.AboutMeList.Any())
+{
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-0">
+                @Model.AboutMeList.First().Name
+                <span class="text-primary">@Model.AboutMeList.First().Surname</span>
+            </h1>
+            <div class="subheading mb-5">
+                @Model.AboutMeList.First().Addresses · @Model.AboutMeList.First().Phone ·
+                <a href="mailto:name@email.com">@Model.AboutMeList.First().Email</a>
+            </div>
+            <p class="lead mb-5">@Model.AboutMeList.First().Note</p>
+            <div class="social-icons">
+                <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+                <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </section>
 }
-
-<h1>@ViewData["Title"]</h1>
-
-
+<!--
     @foreach(var aboutme in Model.AboutMeList){
         <p>@aboutme.Id</p>
         <p>@aboutme.Name</p>
@@ -18,3 +38,4 @@
         <p>@aboutme.Photo</p>
     }
 
+    -->

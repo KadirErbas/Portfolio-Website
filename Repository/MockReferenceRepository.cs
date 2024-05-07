@@ -16,6 +16,14 @@ public class MockReferenceRepository : IReferenceRepository
             Institution="Fırat Üniversitesi",
             Title="Doc. Dr.",
 
+            },            new Reference {
+            Id = 2,
+            Name="Veysel",
+            Surname="Kayık",
+            Email="veyselkayik@gmail.com",
+            Institution="Turkcell Global Bilgi",
+            Title="Web Developer",
+
             },
 
         };

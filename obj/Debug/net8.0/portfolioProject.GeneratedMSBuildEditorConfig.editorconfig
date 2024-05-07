@@ -9,67 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = portfolioProject
 build_property.RootNamespace = portfolioProject
-build_property.ProjectDir = C:\Users\kdrer\OneDrive\Masaüstü\2024-Dersleri\Web Tasarımı ve Prog\proje-odevi\portfolioProject\
+build_property.ProjectDir = C:\Users\kdrer\OneDrive\Masaüstü\2024-Dersleri\Web Tasarımı ve Prog\portfolioProject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\kdrer\OneDrive\Masaüstü\2024-Dersleri\Web Tasarımı ve Prog\proje-odevi\portfolioProject
+build_property.MSBuildProjectDirectory = C:\Users\kdrer\OneDrive\Masaüstü\2024-Dersleri\Web Tasarımı ve Prog\portfolioProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/AboutMe.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/AboutMe.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRNZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/Admins/Index.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Admins/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/Education.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Education.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWR1Y2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/Error.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/Experience.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Experience.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZXJpZW5jZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/Hobbies.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Hobbies.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9iYmllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/Index.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/Privacy.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/Reference.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Reference.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVmZXJlbmNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9OYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/Skills.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Skills.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2tpbGxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/_ViewImports.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/_ViewStart.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/proje-odevi/portfolioProject/Pages/Shared/_Layout.cshtml]
+[C:/Users/kdrer/OneDrive/Masaüstü/2024-Dersleri/Web Tasarımı ve Prog/portfolioProject/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7fqev70qnw

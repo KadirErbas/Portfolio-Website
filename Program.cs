@@ -12,6 +12,8 @@ builder.Services.AddScoped<IExperienceRepository, MockExperienceRepository>();
 builder.Services.AddScoped<IHobbiesRepository, MockHobbiesRepository>();
 builder.Services.AddScoped<IReferenceRepository, MockReferenceRepository>();
 builder.Services.AddScoped<ISkillsRepository, MockSkillsRepository>(); 
+builder.Services.AddScoped<IWorkflowRepository, MockWorkflowRepository>(); 
+
 
 
 var app = builder.Build();

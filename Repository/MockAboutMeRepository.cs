@@ -15,7 +15,7 @@ public class MockAboutMeRepository : IAboutMeRepository
             Addresses="Tilmerç Mahalesi Memursen Toki Konutları Y-3 No:7 Merkez/Batman",
             Email="akadir.erbass@gmail.com",
             Phone="05523527172",
-            Note="2000 Yılında Batmanda d doğdum",
+            Note="2000 Yılında Batman'da doğdum.",
             Photo="1.jpg"
             }
         };

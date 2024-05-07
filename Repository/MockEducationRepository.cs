@@ -11,8 +11,6 @@ public class MockEducationRepository : IEducationRepository
             new Education {
             Id = 1,
             Title = "Gültepe Anadolu Lisesi",
-            Subtitle="Erbaş",
-            Description="Tilmerç Mahalesi Memursen Toki Konutları Y-3 No:7 Merkez/Batman",
             GNO="70",
             Date="2014 - 2018 Haziran",
             },
